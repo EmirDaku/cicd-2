@@ -20,3 +20,4 @@ jobs:
       - run: dotnet test
         working-directory: ./api
       - run: dotnet run 
+        working-directory: ./api
