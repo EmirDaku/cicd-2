@@ -5,7 +5,7 @@ on:
     paths:
       - ".github/workflows/api-build.yml"
       - "api/**"
-  workflow_dispatch: # per trigrim manual  
+  #workflow_dispatch: # per trigrim manual  
 
 jobs:
   build:
