@@ -1,4 +1,4 @@
-name: api-build
+name: api-build-1
 
 on:
   push:
@@ -19,6 +19,5 @@ jobs:
         working-directory: ./api
       - run: dotnet test
         working-directory: ./api
-      - run: dotnet run
-        working-directory: ./api
-      
+     
+    
