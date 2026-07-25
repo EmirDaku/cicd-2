@@ -30,3 +30,4 @@ jobs:
                 go test
                 ./upper foo the bar
               working-directory: ./upper
+              name: Build and Test Upper
