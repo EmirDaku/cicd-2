@@ -26,7 +26,7 @@ jobs:
             - run: go mod download
               working-directory: ./upper      
               
-            - name: Build and Test Upper  # E zhvendosur këtu lart (si emërtim i hapit)
+            - name: Build and Test Upper  
               run: |
                 ls
                 go build
