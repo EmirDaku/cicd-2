@@ -6,26 +6,27 @@ on:
             - "upper/**"
     workflow_dispatch: 
         
-   
 jobs:
     build:
         runs-on: ubuntu-latest
         steps:
             - run: pwd && ls -al
+            
             - uses: actions/checkout@v4 #checkout the code repo
+            
             - run: pwd && ls -al
+            
             - run: go version
+            
             - uses: actions/setup-go@v5
               with:
                 go-version: 1.26.5
-                cache-dependency-path: upper/go.sum # Tells the runner to look inside the 'upper' folder for dependencies
+                cache-dependency-path: upper/go.sum
+                
             - run: |
                 ls
                 go build
                 ls
                 go test
                 ./upper foo the bar
-               working-directory: ./upper
-
-            
-              
+              working-directory: ./upper
