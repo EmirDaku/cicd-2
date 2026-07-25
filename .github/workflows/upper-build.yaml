@@ -11,12 +11,14 @@ jobs:
     build:
         runs-on: ubuntu-latest
         steps:
-            - uses: actions/checkout@v4
+            - run: pwd && ls -al
+            - uses: actions/checkout@v4 #checkout the code repo
+            - run: pwd && ls -al
             - run: go version
             - uses: actions/setup-go@v5
               with:
                 go-version: 1.26.5
-                cache-dependency-path: upper/go.sum
+                cache-dependency-path: upper/go.sum # Tells the runner to look inside the 'upper' folder for dependencies
 
             
               
