@@ -2,7 +2,7 @@ name: upper-build
 on: 
     push:
         paths:
-            - "github/workflows/upper-build.yaml"
+            - ".github/workflows/upper-build.yaml"
             - "upper/**"
     workflow_dispatch: 
         
@@ -25,7 +25,7 @@ jobs:
                 ls
                 go test
                 ./upper foo the bar
-            working-directory: ./upper
+               working-directory: ./upper
 
             
               
