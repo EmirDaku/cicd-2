@@ -11,7 +11,7 @@ jobs:
         runs-on: ubuntu-latest
         steps:
             - run: go version
-            - run: echo "$(cat Dockerfile)"`
+            - run: echo "$(cat Dockerfile)"
 
             
               
