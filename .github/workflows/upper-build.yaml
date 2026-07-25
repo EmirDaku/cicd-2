@@ -12,7 +12,9 @@ jobs:
         runs-on: ubuntu-latest
         steps:
             - run: go version
-            - run: 
+            - uses: actions/setup-go@v5
+              with:
+                go-version: 1.22
 
             
               
