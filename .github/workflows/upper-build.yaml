@@ -5,13 +5,13 @@ on:
             - "github/workflows/upper-build.yaml"
             - "upper/**"
 
-    workflow_dispatch: #manual trigger
+   
 jobs:
     build:
         runs-on: ubuntu-latest
         steps:
             - run: go version
-            - run: echo "$(cat Dockerfile)"
+            - run: cat Dockerfile
 
             
               
