@@ -1,1 +1,7 @@
-upper
+# GitHub Actions Self-Hosted Runner
+upper/actions-runner/
+**/actions-runner/
+
+# Go files
+bin/
+upper/upper
