@@ -1,4 +1,4 @@
-name: gh-cicd
+name: gh
 on:
     push:
       paths:
