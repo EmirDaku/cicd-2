@@ -11,6 +11,7 @@ jobs:
         env:
             GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         steps:
+            - uses: actions/checkout@v5
             - run: env
             - run: gh --version
             - run: gh auth status
