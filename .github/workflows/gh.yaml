@@ -1,4 +1,4 @@
-name: gh
+name: gh-v-1
 on:
     push:
       paths:
